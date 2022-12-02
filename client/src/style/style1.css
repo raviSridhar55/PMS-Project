@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu:wght@300;400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  min-height: 100%;
+  background-color: #001530;
+  overflow-x: hidden;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+.navbar {
+  height: 50px;
+  width: 100%;
+  position: relative;
+  /* background-color: #377dff; */
+  color: #fff;
+  overflow: hidden;
+}
+
+/* .login-tab {
+  padding: 5px;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #0a3742;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-top-left-radius: 50px;
+  padding-left: 50px;
+}
+
+.login {
+  height: 100%;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.login a {
+  color: #fff;
+}
+
+.user {
+  height: 100%;
+  width: 45px;
+  border: #fff 2px solid;
+  border-radius: 50%;
+  position: relative;
+  color: #fff;
+}
+
+.user i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+/* Hero */
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background: #fff;
+  padding: 20px;
+  background: url("business.jpg") center center/cover no-repeat;
+  position: relative;
+  color: #fff;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.header-nav {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 650px;
+  width: 650px;
+  /* background-color: aquamarine; */
+  display: grid;
+  place-items: center;
+}
+
+.logo a {
+  height: 100%;
+  /* width: ; */
+  /* background: #377dff; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.nav-links {
+  height: 100%;
+  width: 500px;
+  /* background-color: blueviolet; */
+  display: grid;
+  place-items: center;
+  font-weight: 500;
+}
+
+.nav-links ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  font-size: 1rem;
+  /* font-weight: 400; */
+}
+
+.nav-links ul li {
+  cursor: pointer;
+  margin-left: 20px;
+  /* background-color: #377dff; */
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.nav-acc-btn {
+  height: 100%;
+  width: 200px;
+  /* background-color: darkorange; */
+  display: grid;
+  place-items: center;
+}
+
+.nav-acc-btn button {
+  height: 70%;
+  width: 50%;
+  border: none;
+  color: #fff;
+  background-color: #0a3742;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nav-acc-btn button a {
+  color: #fff;
+}
+
+.hero-content {
+  height: 60%;
+  width: 50%;
+  position: absolute;
+  right: 0%;
+  /* background-color: aqua; */
+  top: 60%;
+  transform: translateY(-60%);
+}
+
+.hero-content-welcome {
+  height: 50px;
+  width: 250px;
+  background-color: #377dff;
+  display: grid;
+  place-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: 2px lightblue solid;
+  border-radius: 5px;
+}
+
+.hero-content-message {
+  height: 200px;
+  width: 520px;
+  /* background-color: yellow; */
+  font-size: 1.2rem;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.hero-content-btn {
+  height: 50px;
+  width: 400px;
+  /* background-color: bisque; */
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-evenly; */
+}
+
+.hero-content-btn1 {
+  height: 80%;
+  width: 30%;
+  border: none;
+  color: #fff;
+  background-color: #0a3742;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+}
+
+.hero-content-btn1 a {
+  color: #fff;
+}
+
+.hero-content-btn2 {
+  height: 80%;
+  width: 30%;
+  border: none;
+  color: #fff;
+  background-color: #0a3742;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  margin-left: 10px;
+}
+
+.hero-content-btn2 a {
+  color: #fff;
+}
+
+.login-page {
+  height: 100vh;
+  width: 100%;
+  background: #377dff;
+  background: url("Waimakariri.png") no-repeat center center/cover;
+  padding: 20px;
+  position: relative;
+  color: #fff;
+  /* z-index: -10; */
+}
+
+.login-page::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  /* z-index: -5; */
+}
+
+.login-card-section {
+  height: calc(100vh - 80px);
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.login-card {
+  height: 80%;
+  width: 70%;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 2px 6px 32px -4px rgba(0, 0, 0, 0.75);
+}
+
+.login-card-gif {
+  height: 80%;
+  /* background-color: yellow; */
+  display: grid;
+  place-items: center;
+}
+
+.login-card-gif img {
+  height: 400px;
+}
+
+.login-card-main {
+  height: 80%;
+}
+
+.login-card-main form {
+  height: 100%;
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+}
+
+.login-card-main form .login-head {
+  height: 50px;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.form-container1 {
+  height: 320px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.form-container {
+  height: 320px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* flex-direction: column; */
+}
+
+.input {
+  height: 55px;
+  width: 100%;
+  border-radius: 50px;
+  padding-left: 20px;
+  background: #e5f5ff;
+  border: none;
+}
+
+.input:last-child {
+  border: none;
+}
+
+.input-btn {
+  background: #377dff;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  letter-spacing: 2px;
+  display: block;
+}
+
+.register-card {
+  height: 100%;
+  width: 70%;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 2px 6px 32px -4px rgba(0, 0, 0, 0.75);
+}
+
+.register-head {
+  height: px;
+  width: 100%;
+
+  display: grid;
+  place-items: center;
+}
+
+.register-card-main {
+  width: 100%;
+}
+
+.register-card {
+  height: 80%;
+  width: 70%;
+  background-color: #fff;
+  /* display: grid; */
+  /* grid-template-columns: repeat(2, 1fr); */
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 2px 6px 32px -4px rgba(0, 0, 0, 0.75);
+}
+
+.form-container-col1 {
+  width: 100%;
+  height: 100%;
+  display: grid;
+}
+
+.form-container-col2 {
+  width: 100%;
+  height: 100%;
+  display: grid;
+}
+
+.register-input {
+  height: 55px;
+  width: 85%;
+  border-radius: 50px;
+  padding-left: 20px;
+  /* background: #e5f5ff; */
+  border: none;
+  margin: auto;
+}
+
+.mt-1 {
+  margin-top: 20px;
+}
+
+.bg {
+  background: #e5f5ff;
+}
+
+textarea[placeholder] {
+  margin-left: 5px;
+  display: flex;
+  padding-top: 18px;
+}
